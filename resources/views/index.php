@@ -72,14 +72,10 @@
                         </li>
                         <li class="tq">Settings</li>
                         <li >
-                            <a href="./#location">
-                                Regions
-                            </a>
+                            <a href="./#region">Regions</a>
                         </li>
                         <li>
-                            <a href="./#location" target="blank">
-                                Districts
-                            </a>
+                            <a href="./#district">Districts</a>
                         </li>
                         <li>
                             <a href="./#categories" target="blank">
@@ -190,4 +186,3 @@
 </script>
 </body>
 </html>
-
