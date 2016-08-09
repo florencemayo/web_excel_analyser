@@ -1,16 +1,45 @@
-<h1>Mambo yanayohusu location hapa</h1>
+<h1>Locations</h1>
 
 <form autocomplete="on">
   <div class="qo qw">
       <div class="qq">
-        <h3 class="qr">Add New Category</h3>
+        <h3 class="qr">Add Region</h3>
       </div>
       <div class="qp">
          <div class="el">
-             <label for="categoryName">Name of Category</label>
-              <input type="name" class="form-control" ng-model="category" name="name" id="category-name"  placeholder="Enter name of category" />
+             <label for="regionName">Region</label>
+              <input type="name" class="form-control" ng-model="region" name="regionName" id="region-name"  placeholder="Enter Region name" />
         </div>
-         <button ng-click="save(category)" class="ce fn fh">Save</button>
+         <button ng-click="save()" class="ce fn fh">Save</button>
       </div>
     </div>
+</form>
+
+<form>
+  <div class="gr">
+    <div class="qo qw">
+        <div class="qq">
+          <h3 class="qr">Add District</h3>
+        </div>
+        <div class="nz akx">
+          <button type="button" class="ce fh" data-toggle="dropdown" aria-expanded="true">Primary <span class="cj"></span>Available Regions</button>
+          <!--
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="index.html#">Action</a></li>
+              <li><a href="index.html#">Another action</a></li>
+              <li><a href="index.html#">Something else here</a></li>
+              <li class="ns"></li>
+              <li><a href="index.html#">Separated link</a></li>
+            </ul>
+          -->
+        </div>
+        <div class="qp">
+           <div class="el">
+               <label for="districtName">District</label>
+                <input type="name" class="form-control" ng-model="district" name="districtName" id="district-name"  placeholder="Enter District name" />
+           </div>
+           <button ng-click="add()" class="ce fn fh">Add</button>
+        </div>
+    </div>
+  </div>
 </form>
