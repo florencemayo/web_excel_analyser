@@ -23,9 +23,12 @@ angular.module("excelAnalyser",[
         $routeProvider.when("/reports",{
             templateUrl: 'views/reports.html',
             controller: 'mainController'
-        }).when("/location",{
-            templateUrl: 'views/location.html',
-            controller: 'locationController'
+        }).when("/region",{
+              templateUrl: 'views/region.html',
+              controller: 'regionController'
+        }).when("/district",{
+            templateUrl: 'views/district.html',
+            controller: 'districtController'
         }).when("/categories",{
             templateUrl: 'views/categories.html',
             controller: 'categoriesController'
