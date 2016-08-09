@@ -1,9 +1,9 @@
 /**
  * Created by kelvin on 8/7/16.
  */
-var locationController = angular.module("locationController",[])
-    .controller('locationController', ['$scope','$http', function ($scope, $http) {
-        console.log("Location Controller Page!");
+var regionController = angular.module("regionController",[])
+    .controller('regionController', ['$scope','$http', function ($scope, $http) {
+        console.log("Region Controller Page!");
 
         $scope.region;
         $scope.save = function(region){
