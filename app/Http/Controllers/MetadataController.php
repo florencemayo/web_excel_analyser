@@ -77,8 +77,7 @@ class MetadataController extends Controller
     public function update(Request $request, $id)
     {
         $metadata = Metadata::find($id);
-
-        //$metadata->name = $request->name;
+        $metadata->name = $request->name;
         $metadata->save();
     }
 
@@ -92,6 +91,5 @@ class MetadataController extends Controller
     {
         $metadata = Metadata::find($id);
         $metadata->delete();
-        $metadata->save();
     }
 }

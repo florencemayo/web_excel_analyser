@@ -26,14 +26,12 @@ var categoriesController = angular.module("categoriesController",[])
 
         $scope.init();
         $scope.save = function(category){
-            console.log(API_URL)
-        $http.post(API_URL + "categories", {
+          $http.post(API_URL + "categories", {
              name: $scope.category
-          }).success(function(data, status, headers, config) {
-            $scope.categories.push(data);
-            console.log(data)
-            //$scope.category='';
-          });
+           })
+            .success(function(data, status, headers, config) {
+              $scope.categories.push(data);
+            });
         }
 
     }]);
