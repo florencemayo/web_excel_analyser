@@ -1,45 +1,34 @@
 <h1>Metadata</h1>
-
 <form>
-<div class="gr">
-  <div class="qo qw">
+<div class="qo qw">
       <div class="qq">
         <h3 class="qr">Add New Metadata</h3>
       </div>
       <div class="qp">
-         <div class="el">
-             <label for="categoryName">Name of Metadata</label>
-              <input type="name" class="form-control" ng-model="metadata" name="name" id="metadata-name"  placeholder="Enter name of metadata" />
-        </div>
-         <button  ng-click="save(metadata)" class="ce fn fh">Save</button>
-      </div>
+      <div class="fu">
+      <div class="gr">
+   
+    <div class="el">
+    <label for="categoryName" class="ga ex">Name</label>
+    <div class="hg">
+    <input type="name" class="form-control" ng-model="metadata" name="name" id="metadata-name"  placeholder="Enter name of metadata" />
     </div>
     </div>
-    <div class="gr">
-     <div class="qo qw">
-      <div class="qq">
-        <h3 class="qr">Add New Metadata Category</h3>
-      </div>
-      <div class="qp">
-         <div class="el">
-             <label for="categoryName">Metadata ID</label>
-              <input type="name" class="form-control" name="metadataId" id="metadata-id"  placeholder="Enter name of metadata" />
-              <label for="categoryName">Category ID</label>
-              <input type="name" class="form-control" name="categoryId" id="category-id"  placeholder="Enter name of metadata" />
-        </div>
-         <button ng-click="saveMetadata" class="ce fn fh">Save</button>
 
       </div>
-    </div>
-    </div>
-</form>
+      <div class="gr"> 
+           <button  ng-click="save(metadata)" class="ce fn fh">Save</button>
+      </div>
+      </div>
+      </div>
+        
+</div>
 
-<div class="fu">
-  <div class="gr">
-    <table class="cl" >
+<table class="cl cm" >
       <thead>
         <tr>
          <th>METADATA NAME</th>
+         <th><span class="bv ack"></span></th>
         </tr>
       </thead>
       <tbody>
@@ -52,10 +41,45 @@
           </td>
         </tr>
       </tbody>
-    </table>
-  </div>
-   <div class="gr">
-    <table class="cl" >
+</table>
+
+
+
+<h1>Metadata Category</h1>
+<div class="qo qw">
+      <div class="qq">
+        <h3 class="qr">Add New Metadata Category</h3>
+      </div>
+      <div class="qp">
+      <div class="fu">
+        <div class="gi">
+         <div class="el">
+             <div class="bs">
+             <label for="metadataID">Metadata ID</label>
+               <select class="anz" id="metadataID" name="metadataID">
+                  <option name="">Default</option>
+                  <option name="">{{}}</option>
+              </select>
+              </div>
+            </div>
+            </div>
+             <div class="gi">
+              <div class="bs">
+              <label for="categoryID">Category ID</label>
+              <select class="anz" name="categoryID" id="categoryID">
+                  <option name="">Default</option>
+                  <option name="">{{}}</option>
+              </select>
+              </div>
+             </div>
+              <div class="gi">
+               <button ng-click="saveMetadata" class="ce fn fh">Save</button>
+              </div>
+        </div>
+      </div>
+    </div>
+
+<table class="cl cm" >
       <thead>
         <tr>
           <th>Metadata-Category Name</th>
@@ -66,7 +90,5 @@
           <td>{{dataCategory.name}}</td-->
         </tr>
       </tbody>
-    </table>
-  </div>
-</div>
-
+</table>
+</form>

@@ -44,6 +44,9 @@ angular.module("excelAnalyser",[
         }).when("/users",{
             templateUrl: 'views/users.html',
             controller: 'mainController'
+        }).when("/cats",{
+            templateUrl: 'views/categories.html',
+            controller: 'mainController'
         });
 
         $routeProvider.otherwise({
