@@ -39,7 +39,7 @@ class DistrictController extends Controller
     public function store(Request $request)
     {
         $district = new District;
-        $district->name = $request->name;
+        $district->nameDistrict = $request->nameDistrict;
         $district->save();
         return $district;
     }

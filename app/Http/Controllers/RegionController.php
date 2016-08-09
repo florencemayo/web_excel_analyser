@@ -39,7 +39,7 @@ class RegionController extends Controller
     public function store(Request $request)
     {
         $region = new Region;
-        $region->name = $request->name;
+        $region->nameRegion = $request->nameRegion;
         $region->save();
         return $region;
     }
