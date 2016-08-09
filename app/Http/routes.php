@@ -133,3 +133,4 @@ Route::post('datavalue/{id}', 'DataValuesController@update');
 
 //delete datavalue with id $id
 Route::post('datavalue/delete/{id}', 'DataValuesController@destroy');
+
