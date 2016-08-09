@@ -55,5 +55,4 @@ var metadataController = angular.module("metadataController",[])
            	location.reload();
           });
         };
-
 }]);
