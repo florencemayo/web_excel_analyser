@@ -1,6 +1,6 @@
 <h1>Metadata</h1>
 
-<form method="post">
+<form>
 <div class="gr">
   <div class="qo qw">
       <div class="qq">
@@ -9,9 +9,9 @@
       <div class="qp">
          <div class="el">
              <label for="categoryName">Name of Metadata</label>
-              <input type="name" class="form-control" name="name" id="metadata-name"  placeholder="Enter name of metadata" />
+              <input type="name" class="form-control" ng-model="metadata" name="name" id="metadata-name"  placeholder="Enter name of metadata" />
         </div>
-         <button ng-click="saveMetadata" class="ce fn fh">Save</button>
+         <button  ng-click="save(metadata)" class="ce fn fh">Save</button>
       </div>
     </div>
     </div>
@@ -28,6 +28,7 @@
               <input type="name" class="form-control" name="categoryId" id="category-id"  placeholder="Enter name of metadata" />
         </div>
          <button ng-click="saveMetadata" class="ce fn fh">Save</button>
+
       </div>
     </div>
     </div>
@@ -38,13 +39,17 @@
     <table class="cl" >
       <thead>
         <tr>
-          <th>#</th>
-          <th>Metadata Name</th>
+         <th>METADATA NAME</th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="data in metadata">
-          <td>{{data.name}}</td>
+        <tr ng-repeat="datas in metadatas">
+          <td>{{datas.name}}</td>
+          <td>    
+          <button class="ce fn fj" ng-click="edit(datas.id)">Edit</button>
+          <button  ng-click="update(datas.id)" class="ce fn fh">Update</button>
+          <button class="ce fn fl" ng-click="delete(datas.id)">Delete</button>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -53,13 +58,12 @@
     <table class="cl" >
       <thead>
         <tr>
-          <th>#</th>
           <th>Metadata-Category Name</th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="dataCategory in metadata-category">
-          <td>{{dataCategory.name}}</td>
+        <!--tr ng-repeat="dataCategory in metadata-category">
+          <td>{{dataCategory.name}}</td-->
         </tr>
       </tbody>
     </table>
