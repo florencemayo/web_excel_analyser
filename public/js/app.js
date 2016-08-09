@@ -37,7 +37,7 @@ angular.module("excelAnalyser",[
             controller: 'mainController'
         }).when("/upload",{
             templateUrl: 'views/upload.html',
-            controller: 'mainController'
+            controller: 'fileController'
         }).when("/users",{
             templateUrl: 'views/users.html',
             controller: 'mainController'

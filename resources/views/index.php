@@ -169,6 +169,8 @@
 <script type="text/javascript" src="<?php echo  asset("controllers/categoriesController.js") ?>"></script>
 <script type="text/javascript" src="<?php echo  asset("controllers/metadataController.js") ?>"></script>
 
+<script type="text/javascript" src="<?php echo  asset("controllers/fileController.js") ?>"></script>
+
 <script src="<?php echo  asset("libs/pagination/dirPagination.js") ?>"></script>
 
 <script src="<?php echo  asset("libs/angular-strap/angular-strap.js") ?>" data-semver="v2.3.7"></script>
