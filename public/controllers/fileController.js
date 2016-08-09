@@ -6,16 +6,17 @@
 var fileController = angular.module("fileController",[])
     .controller('fileController', ['$scope', '$http', 'API_URL', function ($scope, $http, API_URL) {
         $http.get(API_URL+"upload")
-            .success(function (file){
-                $scope.uploads = file;
+            .success(function (data){
+                $scope.uploads = data;
             });
 
-        $scope.save = function(files){ // metadata
+        $scope.save = function(data){
             $http.post(API_URL+ "upload", {
-                name:$scope.file
+                name:$scope.data
             })
-                .success(function(file){
-                    $scope.metadatas.push(file)
+                .success(function(data){
+                    $scope.uploads.push(data)
+                    console.log(data);
                 });
         };
 
@@ -25,12 +26,12 @@ var fileController = angular.module("fileController",[])
                 // delete/+id
                 name:$scope.file
                 })
-                .success(function (file){
-                    console.log(file);
+                .success(function (data){
+                    console.log(data);
                     location.reload();
                 })
-                .error(function (file){
-                    console.log(file);
+                .error(function (data){
+                    console.log(data);
                     alert('Unable to delete');
                 });
         };
@@ -40,9 +41,9 @@ var fileController = angular.module("fileController",[])
             $http.post(API_URL + "upload/" + id, {
                 name:$scope.file
             })
-                .success(function (file){
-                    console.log("UPDATED"+file);
-                    $scope.uploads.push(file);;
+                .success(function (data){
+                    console.log("UPDATED"+data);
+                    $scope.uploads.push(data);
                     location.reload();
                 });
         };

@@ -168,7 +168,6 @@
 <script type="text/javascript" src="<?php echo  asset("controllers/locationController.js") ?>"></script>
 <script type="text/javascript" src="<?php echo  asset("controllers/categoriesController.js") ?>"></script>
 <script type="text/javascript" src="<?php echo  asset("controllers/metadataController.js") ?>"></script>
-
 <script type="text/javascript" src="<?php echo  asset("controllers/fileController.js") ?>"></script>
 
 <script src="<?php echo  asset("libs/pagination/dirPagination.js") ?>"></script>
