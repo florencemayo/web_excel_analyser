@@ -160,6 +160,11 @@
 
 <!--controllers-->
 <script type="text/javascript" src="<?php echo  asset("controllers/mainController.js") ?>"></script>
+<<<<<<< HEAD
+=======
+<script type="text/javascript" src="<?php echo  asset("controllers/districtController.js") ?>"></script>
+<script type="text/javascript" src="<?php echo  asset("controllers/regionController.js") ?>"></script>
+>>>>>>> namy
 <script type="text/javascript" src="<?php echo  asset("controllers/categoriesController.js") ?>"></script>
 <script type="text/javascript" src="<?php echo  asset("controllers/metadataController.js") ?>"></script>
 <script type="text/javascript" src="<?php echo  asset("controllers/regionController.js") ?>"></script>
