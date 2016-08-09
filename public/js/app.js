@@ -23,9 +23,12 @@ angular.module("excelAnalyser",[
         $routeProvider.when("/reports",{
             templateUrl: 'views/reports.html',
             controller: 'mainController'
-        }).when("/location",{
-            templateUrl: 'views/location.html',
-            controller: 'locationController'
+        }).when("/region",{
+              templateUrl: 'views/region.html',
+              controller: 'regionController'
+        }).when("/district",{
+            templateUrl: 'views/district.html',
+            controller: 'districtController'
         }).when("/categories",{
             templateUrl: 'views/categories.html',
             controller: 'categoriesController'
@@ -37,7 +40,7 @@ angular.module("excelAnalyser",[
             controller: 'mainController'
         }).when("/upload",{
             templateUrl: 'views/upload.html',
-            controller: 'fileController'
+            controller: 'mainController'
         }).when("/users",{
             templateUrl: 'views/users.html',
             controller: 'mainController'

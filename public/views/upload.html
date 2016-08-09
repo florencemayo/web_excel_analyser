@@ -11,37 +11,35 @@
                     <!--Panel content-->
                     <div class="el">
                         <label for="uploadedExcelFile">File input</label>
-                        <input type="file" id="uploadedExcelFile">
+                        <input type="file" id="uploadedExcelFile" ng-model="file">
                         <!--<p class="ew">Example block-level help text here.</p>-->
                     </div>
                     <!--<button type="button" name="action" value="save">Save</button>-->
-                    <button ng-click="save(file)" class="ce fn fh">Save</button>
+                    <button ng-click="save(file)" class="ce fn fh">Upload</button>
                 </div>
             </div>
 
             </form>
 
-
-
-            <div class="fu">
-                <div class="gr">
-                    <table class="cl" >
-                        <thead>
-                        <tr>
-                            <th>UPLOADED FILES</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="files in uploads">
-                            <td>{{file.name}}</td>
-                            <td>
-                                <button  ng-click="update(files.id)" class="ce fn fh">Update</button>
-                                <button ng-click="destroy(files.id)" class="ce fn fl">Delete</button>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <!--<div class="fu">-->
+                <!--<div class="gr">-->
+                    <!--<table class="cl" >-->
+                        <!--<thead>-->
+                        <!--<tr>-->
+                            <!--<th>UPLOADED FILES</th>-->
+                        <!--</tr>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                        <!--<tr ng-repeat="files in uploads">-->
+                            <!--<td>{{file.name}}</td>-->
+                            <!--<td>-->
+                                <!--<button  ng-click="update(files.id)" class="ce fn fh">Update</button>-->
+                                <!--<button ng-click="destroy(files.id)" class="ce fn fl">Delete</button>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+                <!--</div>-->
                 <!--<div class="gr">-->
                     <!--<table class="cl" >-->
                         <!--<thead>-->

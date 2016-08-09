@@ -134,22 +134,3 @@ Route::post('datavalue/{id}', 'DataValuesController@update');
 //delete datavalue with id $id
 Route::post('datavalue/delete/{id}', 'DataValuesController@destroy');
 
-/**
- * Files routes
- *
- */
-//Route::resource('files', 'FileController', ['except' => ['create', 'edit']]);
-
-Route::get('file', 'FileController@index');
-
-//get one file with using id
-Route::get('file/{id}', 'FileController@show');
-
-//create new file
-Route::post('file', 'FileController@store');
-
-//update one file with id $id
-Route::post('file/{id}', 'FileController@update');
-
-//delete file with id $id
-Route::post('file/delete/{id}', 'FileController@destroy');
